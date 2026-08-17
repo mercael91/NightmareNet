@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.5.0](https://github.com/Adit-Jain-srm/NightmareNet/compare/nightmarenet-v0.4.0...nightmarenet-v0.5.0) (2026-08-17)
+
+
+### Features
+
+* add cross-architecture robustness evaluation ([#579](https://github.com/Adit-Jain-srm/NightmareNet/issues/579)) ([5853afd](https://github.com/Adit-Jain-srm/NightmareNet/commit/5853afdb79c9a9e736539880c427dbb77d4659bb))
+* add model inference benchmark dashboard ([#749](https://github.com/Adit-Jain-srm/NightmareNet/issues/749)) ([023ea8d](https://github.com/Adit-Jain-srm/NightmareNet/commit/023ea8d8c3d41b3e2cf272a2d7c652a31d6b9926))
+* **infra:** add mypy strict baseline and TypeScript no-explicit-any enforcement ([#684](https://github.com/Adit-Jain-srm/NightmareNet/issues/684)) ([3db46aa](https://github.com/Adit-Jain-srm/NightmareNet/commit/3db46aa5e55583d6f32b27d50e09ed07f010a116))
+* **server:** add immutable SOC 2 audit log system ([#721](https://github.com/Adit-Jain-srm/NightmareNet/issues/721)) ([89d331c](https://github.com/Adit-Jain-srm/NightmareNet/commit/89d331c54eb146d589a79e02c24200e5f12d10cc))
+
+
+### Bug Fixes
+
+* add metrics attr to _FakePipeline in pipeline_runner tests ([2dbae77](https://github.com/Adit-Jain-srm/NightmareNet/commit/2dbae77ede405700beb412085f28322e3ab2108d))
+* allow unsynced baseline entries in mypy CI step ([8450c3a](https://github.com/Adit-Jain-srm/NightmareNet/commit/8450c3a35e8992271ac7b3cc8e5d3164fc9a1d9b))
+* consolidate webhook rate limiter into shared api/constants.py ([#715](https://github.com/Adit-Jain-srm/NightmareNet/issues/715)) ([921efd0](https://github.com/Adit-Jain-srm/NightmareNet/commit/921efd035e308ea92637e251cca8203cf1f63276))
+* **pipeline_runner:** add thread safety with threading.Lock for _runners registry ([#494](https://github.com/Adit-Jain-srm/NightmareNet/issues/494)) ([#710](https://github.com/Adit-Jain-srm/NightmareNet/issues/710)) ([c44d9bd](https://github.com/Adit-Jain-srm/NightmareNet/commit/c44d9bd588e8b63230bc03239877050caca0f0d9))
+* preserve failure categories and wire evaluation flow ([#416](https://github.com/Adit-Jain-srm/NightmareNet/issues/416)) ([943eacd](https://github.com/Adit-Jain-srm/NightmareNet/commit/943eacd29ee9236af77e88087539e23c6b098cca))
+* prevent logging 'I/O on closed file' traceback in CLI tests ([d5021cc](https://github.com/Adit-Jain-srm/NightmareNet/commit/d5021ccfc140748fc15a953962363016b74a95ca))
+* prevent pipefail from propagating mypy exit code to baseline filter ([896925d](https://github.com/Adit-Jain-srm/NightmareNet/commit/896925d811fc5da925f6d357ac1d24666427dfa5))
+* regenerate mypy baseline from CI output (include notes, real line numbers) ([7293434](https://github.com/Adit-Jain-srm/NightmareNet/commit/72934343a924b7fc8c3d374f8bf9ce478eaa5d0b))
+* regenerate mypy_baseline.txt after PR [#749](https://github.com/Adit-Jain-srm/NightmareNet/issues/749) merge ([f8062a0](https://github.com/Adit-Jain-srm/NightmareNet/commit/f8062a0f1e38c8e348dabac99b31b15b860fa22c))
+* remove unused type: ignore[import-untyped] comments ([6b25b81](https://github.com/Adit-Jain-srm/NightmareNet/commit/6b25b81134dc00ac0fa0abaf1c9bae7d1de70f46))
+* resolve CI failures (mypy baseline + benchmark test) ([ae44be7](https://github.com/Adit-Jain-srm/NightmareNet/commit/ae44be7152be161a02f2beda4244e6d2b4401ccb))
+* save/clear/restore root logger handlers around the CLI invocation. ([d5021cc](https://github.com/Adit-Jain-srm/NightmareNet/commit/d5021ccfc140748fc15a953962363016b74a95ca))
+
 ## [0.4.0](https://github.com/Adit-Jain-srm/NightmareNet/compare/nightmarenet-v0.3.1...nightmarenet-v0.4.0) (2026-08-06)
 
 
